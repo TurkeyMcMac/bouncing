@@ -49,8 +49,8 @@
 	dup dup		( max *coord *coord *coord )
 	coordUpdate	( max *coord *coord )
 	coordP @	( max *coord position )
-	1 <= if		( max *coord )
-		2 swap		( max 2 *coord )
+	1 < if		( max *coord )
+		1 swap		( max 1 *coord )
 		coordBounce	( max )
 		drop		( )
 	else
@@ -59,9 +59,8 @@
 		rot		( *coord position max )
 		dup		( *coord position max max )
 		rot		( *coord max max position )
-		<= if		( *coord max )
-			1 -		( *coord max-1 )
-			swap		( max-1 *coord )
+		< if		( *coord max )
+			swap		( max *coord )
 			coordBounce	( )
 		else
 			drop drop	( )
