@@ -2,7 +2,7 @@ include util.fs
 include graphics.fs
 include physics.fs
 
-create obj objSize cells allot
+create obj objSize allot
 
 ( width height x y vx vy  -- [no return] )
 : mainLoop
