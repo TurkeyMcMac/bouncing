@@ -1,5 +1,8 @@
 include util.fs
 include graphics.fs
+include physics.fs
+
+create obj objSize cells allot
 
 ( width height x y  -- [no return] )
 : mainLoop
