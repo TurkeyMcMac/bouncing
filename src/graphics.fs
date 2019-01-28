@@ -47,9 +47,8 @@
 : drawScreen
 	>r		( width height x )
 	rot		( height x width )
-	dup		( height x width width )
-	drawVertBorder	( height x width )
-	dup		( height x width width )
+	dup dup		( height x width width width )
+	drawVertBorder	( height x width width )
 	r@		( height x width width y )
 	1 -		( height x width width y-1 )
 	drawSpacesLines	( height x width )
