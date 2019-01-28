@@ -13,5 +13,5 @@ create obj objSize cells allot
 		2dup obj objX @ obj objY @ drawScreen
 		100 ms
 	again
-	drop drop
+	2drop
 ;

@@ -63,7 +63,7 @@
 			swap		( max *coord )
 			coordBounce	( )
 		else
-			drop drop	( )
+			2drop	( )
 		then
 	then
 ;
